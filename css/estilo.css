@@ -1,0 +1,164 @@
+@import url("https://fonts.google.com/specimen/Hanken+Grotesk");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  font-size: 18px;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+.container {
+  width: 600px;
+  height: auto;
+  margin: 100px auto;
+  display: flex;
+  border-radius: 30px;
+  box-shadow: 0px 2px 5px;
+}
+.resultados {
+  height: 400px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  background-color: #5439f6;
+  border-radius: 30px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.resultados h3,
+p {
+  color: #b8b1dc;
+}
+.resultados h2,
+span {
+  color: #fff;
+}
+.resultados__valor {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  display: flex;
+  box-shadow: 0 0 5px #5439f6;
+  background-color: #4628d8;
+  border: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.resultados__valor span {
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+.resultados .texto {
+  text-align: center;
+  width: 90%;
+}
+.summary {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.atributo {
+  width: 250px;
+  height: 50px;
+  border: solid 1px #6040fd;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.vermelho {
+  background-color: #fff6f5;
+  border: solid 1px #fff6f5;
+}
+.vermelho p {
+  color: #e68b89;
+  text-align: center;
+}
+
+.amarelo {
+  background-color: #fffbf2;
+  border: solid 1px #fffbf2;
+}
+.amarelo p {
+  color: #f6c566;
+}
+.verde {
+  background-color: #f2fbfa;
+  border: solid 1px #f2fbfa;
+}
+.verde p {
+  color: #5ec7a9;
+}
+.azul {
+  background-color: #f3f3fd;
+  border: solid 1px #f3f3fd;
+}
+.azul p {
+  color: #3f4595;
+}
+.summary span {
+  color: #cdcccd;
+}
+.icon {
+width: 50%;
+display: flex;
+justify-content: space-evenly;
+}
+button {
+  width: 250px;
+  height: 40px;
+  border: none;
+  border-radius: 20px;
+  background-color: #573cf8;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 500;
+}
+.summary .titulo {
+  width: 250px;
+  height: 20px;
+  text-align: left;
+}
+
+@media screen and (max-width:375px){
+  .container {
+ 
+    max-width: 375px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    padding-bottom:10px ;
+    border-radius: 0 0 0px 0px;
+    box-shadow: none;
+  }
+  .summary{
+    width: 100%;
+  }
+  .summary .titulo{
+    margin-bottom: 15px;
+  }
+  .resultados{
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 0 0 30px 30px;
+  }
+  .atributo{
+   margin-bottom: 15px;
+  }
+  button{
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+  footer{
+    margin-bottom: 10px;
+  }
+}
